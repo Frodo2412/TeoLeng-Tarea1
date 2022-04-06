@@ -4,7 +4,6 @@ import sys
 
 
 def programa(texto):
-    # Findall (<(.*)Date>(.*?)</(.*)Date>)
     nuevo_texto = re.sub(r"(\s|\n)*", "", texto)
     regex = r"<(.*?Date.*?)>(.*?)</(.*?Date.*?)>"
     resultados = re.findall(regex, nuevo_texto)
